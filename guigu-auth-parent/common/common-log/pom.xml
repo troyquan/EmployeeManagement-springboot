@@ -19,11 +19,6 @@
             <scope>provided </scope>
         </dependency>
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <scope>provided </scope>
-        </dependency>
-        <dependency>
             <groupId>com.atguigu</groupId>
             <artifactId>model</artifactId>
             <version>1.0</version>
