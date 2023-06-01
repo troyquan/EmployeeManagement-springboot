@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # 复制 JAR 文件到容器中
-COPY service-system/service-system.jar app.jar
+COPY service-system/target/service-system.jar /app/app.jar
 
 # 定义容器启动命令
 CMD ["java", "-jar", "app.jar"]
