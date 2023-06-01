@@ -11,6 +11,11 @@
 
     <dependencies>
         <!--lombok用来简化实体类-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
 
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
