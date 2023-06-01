@@ -1,7 +1,7 @@
 version: 2
 
 build:
-  dockerfile: Dockerfile
+  dockerfile: ./Dockerfile
   context: service-system
 
 services:
@@ -9,4 +9,4 @@ services:
     build:
       context: service-system
     command: java -jar target/service-system.jar
-    
+
