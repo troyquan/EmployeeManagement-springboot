@@ -8,4 +8,5 @@ services:
   - name: service-system
     build:
       context: service-system
-    command: java -jar service-system.jar
+    command: java -jar target/service-system.jar
+    
