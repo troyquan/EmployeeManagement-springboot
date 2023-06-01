@@ -1,7 +1,11 @@
-version: "2"
-services:
-  app:
-    build:
-      context: ..
-      dockerfile: Dockerfile
+version: 2
 
+build:
+  dockerfile: Dockerfile
+  context: service-system
+
+services:
+  - name: service-system
+    build:
+      context: service-system
+    command: java -jar service-system.jar
