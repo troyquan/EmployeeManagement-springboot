@@ -32,6 +32,11 @@
   <!--配置dependencyManagement锁定依赖的版本-->
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.22</version>
+      </dependency>
       <!--mybatis-plus 持久层-->
       <dependency>
         <groupId>com.baomidou</groupId>
