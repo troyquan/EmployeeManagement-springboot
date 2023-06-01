@@ -29,15 +29,15 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="common" options="-parameters" />
-      <module name="common-log" options="-parameters" />
-      <module name="common-util" options="-parameters" />
-      <module name="guigu-auth-parent" options="-parameters" />
+      <module name="common" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
+      <module name="common-log" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
+      <module name="common-util" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
+      <module name="guigu-auth-parent" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
       <module name="missionEat-auth-parent" options="-parameters" />
-      <module name="model" options="-parameters" />
-      <module name="service-system" options="-parameters" />
-      <module name="service-util" options="-parameters" />
-      <module name="spring-security" options="-parameters" />
+      <module name="model" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
+      <module name="service-system" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
+      <module name="service-util" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
+      <module name="spring-security" options="-parameters -XDskipDuplicateBridges=true -XDstringConcat=inline" />
     </option>
   </component>
 </project>
