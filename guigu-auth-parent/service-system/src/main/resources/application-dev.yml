@@ -6,18 +6,19 @@ mybatis-plus:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/project
+    url: mysql://root:2a0aiKjFx3xOHRPzmsSm@containers-us-west-71.railway.app:5914/railway
     username: root
-    password: 1111
+    password: 2a0aiKjFx3xOHRPzmsSm
+    port: 5914
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT-4
   redis:
-    host: 10.0.0.98
-    port: 6379
+    host: containers-us-west-68.railway.app
+    port: 7386
     database: 0
     timeout: 1800000
-    password:
+    password: wGKi13BS6JDhLWXLZuQA
     jedis:
       pool:
         max-active: 20 #最大连接数
