@@ -9,14 +9,12 @@ import com.baomidou.mybatisplus.extension.api.R;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
- * <p>
- * 菜单表 前端控制器
- * </p>
  *
  * @author Yongze
  * @since 2023-04-09
@@ -28,13 +26,12 @@ public class SysMenuController {
 
     @Autowired
     private SysMenuService sysMenuService;
-
+    @PreAuthorize("hasAuthority('bnt.sysUser.assignRole')")
     @ApiOperation("assign role permission")
     @PostMapping("doAssign")
     public Result doAssign(@RequestBody AssignMenuVo assignMenuVo){
         sysMenuService.doAssign(assignMenuVo);
         return Result.ok();
-
     }
 
     //assign menu by roles

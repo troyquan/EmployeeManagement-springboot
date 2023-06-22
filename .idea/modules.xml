@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/EmployeeManagement-springboot.iml" filepath="$PROJECT_DIR$/.idea/EmployeeManagement-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/common/common.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/common/common-log/common-log.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/common/common-log/common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/common/common-util/common-util.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/common/common-util/common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/guigu-auth-parent.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/guigu-auth-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/model/model.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/service-system/service-system.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/service-system/service-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/common/service-util/service-util.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/common/service-util/service-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guigu-auth-parent/common/spring-security/spring-security.iml" filepath="$PROJECT_DIR$/guigu-auth-parent/common/spring-security/spring-security.iml" />
+    </modules>
+  </component>
+</project>

@@ -32,7 +32,7 @@ public class SysUserController {
     private SysUserService sysUserService;
 
 
-    @PreAuthorize("hasAuthority('bnt.sysUser.status')")
+
     @ApiOperation("update user status")
     @GetMapping("updateStatus/{id}/{status}")
     public Result updateStatus(@PathVariable String id,
@@ -84,7 +84,7 @@ public class SysUserController {
             return Result.fail();
         }
     }
-    @PreAuthorize("hasAuthority('bnt.sysUser.delete')")
+    @PreAuthorize("hasAuthority('bnt.sysUser.remove')")
     @ApiOperation("delete user")
     @DeleteMapping("remove/{id}")
     public Result remove(@PathVariable String id){

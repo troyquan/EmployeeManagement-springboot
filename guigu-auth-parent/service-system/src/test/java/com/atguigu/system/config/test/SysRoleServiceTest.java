@@ -3,6 +3,7 @@ package com.atguigu.system.config.test;
 import com.atguigu.model.system.SysRole;
 import com.atguigu.system.service.SysRoleService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,8 +28,6 @@ public class SysRoleServiceTest {
         sysRole.setRoleCode("service test");
         sysRole.setDescription("service test");
         sysRoleService.save(sysRole);
-
-
     }
 
     @Test

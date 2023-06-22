@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - /home/ubuntu/html:/usr/share/nginx/html
+      - /home/ubuntu/nginx.conf:/etc/nginx/nginx.conf
+    privileged: true  # 给予容器特权，如果确实需要的话
+
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=51522Zzwlwlbb@
+
+  redis:
+    image: redis:latest
+
+  service-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8800:8800
+    depends_on:
+      - mysql
+      - redis
